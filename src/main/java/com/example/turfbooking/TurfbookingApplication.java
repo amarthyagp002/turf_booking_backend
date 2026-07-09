@@ -4,7 +4,25 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-
+//spring.application.name=turfbooking
+//spring.datasource.url=jdbc:postgresql://localhost:5432/turfBookingTest
+//spring.datasource.username=postgres
+//spring.datasource.password=2486
+//spring.datasource.driver-class-name=org.postgresql.Driver
+//spring.jpa.hibernate.ddl-auto=update
+//spring.jpa.show-sql=true
+//server.port=8081
+//
+//spring.mail.host=smtp.gmail.com
+//spring.mail.port=587
+//spring.mail.username=amarhavefaith26@gmail.com
+//spring.mail.password=azlhjagoipcsbblh
+//
+//spring.mail.properties.mail.smtp.auth=true
+//spring.mail.properties.mail.smtp.starttls.enable=true
+//spring.mail.properties.mail.smtp.starttls.required=true
+//spring.mail.properties.mail.smtp.ssl.protocols=TLSv1.2
+//spring.mail.properties.mail.smtp.ssl.trust=smtp.gmail.com
 
 
 
