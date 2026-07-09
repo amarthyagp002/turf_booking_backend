@@ -21,7 +21,7 @@ public class CompanyService {
     public ResponseEntity<String> addCompany(CompanyRequest companyRequest){
         Owners owner=ownersRepo.findById(companyRequest.getOwnerId())
                 .orElseThrow(() -> new RuntimeException("owner not found"));
-        if(companyRepo.existByCompanyName(companyRequest.getCompanyName())){
+        if(companyRepo.existsByCompanyName(companyRequest.getCompanyName())){
             return new ResponseEntity<>("Company name already exist",HttpStatus.BAD_REQUEST);
         }
         Company company = new Company();
