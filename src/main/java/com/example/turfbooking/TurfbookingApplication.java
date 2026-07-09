@@ -4,15 +4,18 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+
+
+
+
 //spring.application.name=turfbooking
-//spring.datasource.url=jdbc:postgresql://localhost:5432/turfBookingTest
-//spring.datasource.username=postgres
-//spring.datasource.password=2486
+//spring.datasource.url=${DB_URL}
+//spring.datasource.username=${DB_USERNAME}
+//spring.datasource.password=${DB_PASSWORD}
 //spring.datasource.driver-class-name=org.postgresql.Driver
 //spring.jpa.hibernate.ddl-auto=update
 //spring.jpa.show-sql=true
-//server.port=8081
-//
+//server.port=${PORT:8080}
 //spring.mail.host=smtp.gmail.com
 //spring.mail.port=587
 //spring.mail.username=amarhavefaith26@gmail.com

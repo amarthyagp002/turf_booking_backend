@@ -11,6 +11,7 @@ public class Company {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long companyId;
+    @Column(unique = true)
     private String companyName;
     private String email;
     private String phone;
