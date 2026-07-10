@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("users")
+@RequestMapping("/users")
 public class CustomerController {
     @Autowired
     CustomerService customerService;
-    @PostMapping("/add")
+    @PostMapping()
     public ResponseEntity<?> addCustomer(@RequestBody CustomerDto customerDto){
         return customerService.addCustomer(customerDto);
     }
