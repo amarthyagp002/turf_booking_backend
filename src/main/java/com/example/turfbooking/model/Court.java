@@ -10,14 +10,14 @@ import java.time.LocalTime;
 public class Court {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long courtId;
-    String courtName;
-    String address;
-    LocalTime openingTime;
-    LocalTime closingTime;
-    String city;
-    double pricePerHour;
-    String status;
+    private Long courtId;
+    private String courtName;
+    private String address;
+    private LocalTime openingTime;
+    private LocalTime closingTime;
+    private String city;
+    private double pricePerHour;
+    private String status;
     @ManyToOne
     @JoinColumn(name ="company_id",nullable = false)
     private Company company;

@@ -7,7 +7,7 @@ public class Owners {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String companyName;
+    private String ownerName;
     private String phone;
     private String address;
     @OneToOne
@@ -46,11 +46,11 @@ public class Owners {
         this.phone = phone;
     }
 
-    public String getCompanyName() {
-        return companyName;
+    public String getOwnerName() {
+        return ownerName;
     }
 
-    public void setCompanyName(String companyName) {
-        this.companyName = companyName;
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
     }
 }

@@ -21,23 +21,21 @@ public class CustomerService {
     UsersRepo usersRepo;
     @Autowired
     CustomerRepo customerRepo;
-    public ResponseEntity<?> addUser(CustomerDto customerDto) {
+    public ResponseEntity<?> addCustomer(CustomerDto customerDto) {
         Customer customer=new Customer();
         Users users =new Users();
         users.setEmail(customerDto.getEmail());
         users.setPassword(customerDto.getPassword());
-        users.setRole(Role.OWNER);
+        users.setRole(Role.CUSTOMER);
         users.setCreated_at(LocalDate.now());
         users.setUpdated_at(LocalDate.now());
         users.setEmail_verified(false);
         users.setStatus("ACTIVE");
         usersRepo.save(users);
         customer.setUsers(users);
-//        customer.setAddress(customerDto.getAddress());
-//        owners.setCompanyName(customerDto.getBusinessName());
-//        customer.setPhone(customerDto.getPhone());
         customerRepo.save(customer);
-        return new ResponseEntity<>("successfull", HttpStatus.OK);
+        return new ResponseEntity<>("Successfull", HttpStatus.OK);
 
     }
+
 }

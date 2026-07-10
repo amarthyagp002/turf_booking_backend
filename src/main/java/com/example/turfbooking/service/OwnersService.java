@@ -33,7 +33,7 @@ public class OwnersService {
         usersRepo.save(users);
         owners.setUsers(users);
         owners.setAddress(ownersDto.getAddress());
-        owners.setCompanyName(ownersDto.getBusinessName());
+        owners.setOwnerName(ownersDto.getBusinessName());
         owners.setPhone(ownersDto.getPhone());
         ownersRepo.save(owners);
         return new ResponseEntity<>("successfull", HttpStatus.OK);
